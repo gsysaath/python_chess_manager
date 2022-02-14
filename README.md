@@ -1,6 +1,5 @@
 # Chess manager
-### Chess manager vous permet de gerer une liste de joureurs, de creer des joueurs et des tournois.
-### Il permet egalement de jouer les tournois avec le SYSTÈME SUISSE DES TOURNOIS
+### Chess manager vous permet de gerer une liste de joureurs, de creer des joueurs et des tournois. Il permet egalement de jouer les tournois avec le SYSTÈME SUISSE DES TOURNOIS.
 
 
 # Installation du chess tournament manager
@@ -49,4 +48,4 @@ Activons le:
     
 ## Lancer un reporting flake8 pour le pep8
 
-   ***flake8 --format=html --htmldir=flake-report
+***flake8 --format=html --htmldir=flake-report***
