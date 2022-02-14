@@ -9,6 +9,7 @@ from models.tournament import TimeControl
 from models.custom_types import (
     Name,
     Rank,
+    TimeControlInt,
 )
 
 from views.view import View
@@ -103,18 +104,19 @@ class NewTournamentForm(Form):
     def __init__(self):
         """ Initialize new tournament form """
         super().__init__(title="New Tournament Form", fields=[
-            ('name', "tournament's name", Name),
-            ('place', "tournament's place", Name),
+            ('name', "tournament name", str),
+            ('place', "tournament place", str),
             ('start_day', 'start date day', int, date.today().day),
             ('start_month', 'start date month', int, date.today().month),
             ('start_year', 'start date year', int, date.today().year),
             ('number_of_turns', 'number of turns', int, 4),
-            ('time_control', 'Time Control', TimeControl, TimeControl.Rapid),
+            ('time_control', 'Time Control (1: Bullet, 2: Blitz, 3: Rapid)', TimeControlInt, 3),
             ('description', 'description', str),
             ('number_of_players', 'number of players', int),
         ])
 
     def post_exec(self, data):
+        data['time_control'] = TimeControl(data['time_control'])
         select_player_menu = SelectItemMenu(players.find_all())
         data['players'] = [select_player_menu.exec() for _ in range(data['number_of_players'])]
         data["turns"] = [{'name': f"round {nb}", 'position': nb} for nb in range(1, data['number_of_turns'] + 1)]

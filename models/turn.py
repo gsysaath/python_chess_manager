@@ -24,7 +24,8 @@ class Turn(BaseModel):
     def __str__(self):
         """ Depends if turn's matches are played or not """
         result = f"{self.name.title()}\n"
-        result += f"Start time: {self.start_datetime.strftime('%m/%d/%Y, %H:%M:%S')}\n"
+        if self.start_datetime:
+            result += f"Start time: {self.start_datetime.strftime('%m/%d/%Y, %H:%M:%S')}\n"
         if self.end_datetime:
             result += f"End time: {self.end_datetime.strftime('%m/%d/%Y, %H:%M:%S')}\n"
         for match in self.matches:

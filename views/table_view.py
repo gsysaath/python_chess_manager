@@ -45,7 +45,7 @@ class TournamentTurns(Table):
 class TournamentMatches(Table):
     def __init__(self, matches_list):
         """ Show tournament's matches """
-        super().__init__(title="Turns", item_list=matches_list)
+        super().__init__(title="All Matches", item_list=matches_list)
 
 
 class TournamentPlayerListByName(Table):

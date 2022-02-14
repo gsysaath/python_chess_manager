@@ -30,3 +30,9 @@ class Rank(ConInt):
     """ Subclass of ConInt, only valid with int between 1 and 3000"""
     def __new__(cls, v):
         return ConInt.__new__(cls, v, check=lambda x: x in range(1, 3001))
+
+
+class TimeControlInt(ConInt):
+    """ Subclass of ConInt, only valid if value is 1,2 or 3 """
+    def __new__(cls, v):
+        return ConInt.__new__(cls, v, check=lambda x: x in range(1, 4))

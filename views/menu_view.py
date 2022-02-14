@@ -78,9 +78,9 @@ class SelectItemMenu(Menu):
 
 
 class TournamentShowMenu(Menu):
-    def __init__(self, id):
+    def __init__(self, id, tournament_name):
         """ Tournament show menu """
-        super().__init__(title=f"Tournament {id} Menu", choices=[
+        super().__init__(title=f"Tournament: {tournament_name} Menu", choices=[
             ("Tournaments players sorted by name", f"/tournaments/{id}/info/players/name"),
             ("Tournaments players sorted by rank", f"/tournaments/{id}/info/players/rank"),
             ("List of all turns", f"/tournaments/{id}/info/turns"),

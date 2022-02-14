@@ -8,7 +8,7 @@ from models.match import Match
 from models.turn import Turn
 from orm.player_orm import players
 
-NAME_REGEX = r"^[A-Za-z -'éèï]{2,30}$"
+NAME_REGEX = r"^.{2,30}$"
 
 
 class TimeControl(Enum):

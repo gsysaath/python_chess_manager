@@ -8,7 +8,7 @@ from views.menu_view import HomeMenu, PlayerMenu, TournamentMenu, TournamentShow
 from views.form_view import NewPlayerForm, NewTournamentForm
 from views.table_view import PlayerListByName, PlayerListByRank, TournamentList, TournamentPlayerListByName
 from views.table_view import TournamentPlayerListByScore, TournamentTurns, TournamentMatches
-from views.show_view import ShowError
+from views.show_error import ShowError
 
 
 router = Router()
@@ -71,7 +71,8 @@ def show_tournament(tournament_id=None):
     """ Show one tournament details menu """
     if tournament_id is None:
         tournament_id = SelectItemMenu(items=tournaments.find_all()).exec()
-    router.navigate(TournamentShowMenu(tournament_id).exec(), has_param=True)
+    name = tournaments.find_by_id(tournament_id).name
+    router.navigate(TournamentShowMenu(id=tournament_id, tournament_name=name).exec(), has_param=True)
 
 
 def tournaments_players_name(id):

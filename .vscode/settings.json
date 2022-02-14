@@ -7,5 +7,6 @@
     "python.analysis.extraPaths": [
         "./models"
     ],
+    "liveServer.settings.port": 5501,
 
 }

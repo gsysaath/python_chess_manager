@@ -33,9 +33,3 @@ router.add_route("/tournaments/play", tournament_play)
 
 if __name__ == '__main__':
     main()
-
-# Custom types/ turn start datetime setting, try except when create, form_view change class to custom types
-# Docstring to all functions/ AND READ ME +  Powerpoint + github
-# Wording turns => matches
-# Wording rank => score
-# flake8_html => reporting

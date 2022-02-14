@@ -73,5 +73,140 @@
             "rank": 2500
         }
     },
-    "tournaments": {}
+    "tournaments": {
+        "1": {
+            "id": 1,
+            "name": "World tournament 2020",
+            "place": "Geneva",
+            "start_date": "2022-02-14T11:21:43.083026",
+            "end_date": null,
+            "number_of_turns": 4,
+            "time_control": 3,
+            "description": "",
+            "turns": [
+                {
+                    "matches": [
+                        {
+                            "player1_id": 6,
+                            "player2_id": 4,
+                            "player1_score": 1.0
+                        },
+                        {
+                            "player1_id": 7,
+                            "player2_id": 3,
+                            "player1_score": 1.0
+                        },
+                        {
+                            "player1_id": 8,
+                            "player2_id": 2,
+                            "player1_score": 1.0
+                        },
+                        {
+                            "player1_id": 5,
+                            "player2_id": 1,
+                            "player1_score": 1.0
+                        }
+                    ],
+                    "name": "round 1",
+                    "start_datetime": "2022-02-14T11:22:02.227854",
+                    "end_datetime": "2022-02-14T11:32:49.057092",
+                    "position": 1
+                },
+                {
+                    "matches": [
+                        {
+                            "player1_id": 5,
+                            "player2_id": 8,
+                            "player1_score": 1.0
+                        },
+                        {
+                            "player1_id": 7,
+                            "player2_id": 6,
+                            "player1_score": 1.0
+                        },
+                        {
+                            "player1_id": 1,
+                            "player2_id": 2,
+                            "player1_score": 1.0
+                        },
+                        {
+                            "player1_id": 3,
+                            "player2_id": 4,
+                            "player1_score": 1.0
+                        }
+                    ],
+                    "name": "round 2",
+                    "start_datetime": "2022-02-14T11:32:49.057840",
+                    "end_datetime": "2022-02-14T11:32:51.064772",
+                    "position": 2
+                },
+                {
+                    "matches": [
+                        {
+                            "player1_id": 5,
+                            "player2_id": 7,
+                            "player1_score": 1.0
+                        },
+                        {
+                            "player1_id": 1,
+                            "player2_id": 3,
+                            "player1_score": 1.0
+                        },
+                        {
+                            "player1_id": 8,
+                            "player2_id": 6,
+                            "player1_score": 1.0
+                        },
+                        {
+                            "player1_id": 2,
+                            "player2_id": 4,
+                            "player1_score": 1.0
+                        }
+                    ],
+                    "name": "round 3",
+                    "start_datetime": "2022-02-14T11:32:51.066368",
+                    "end_datetime": "2022-02-14T11:32:53.714256",
+                    "position": 3
+                },
+                {
+                    "matches": [
+                        {
+                            "player1_id": 5,
+                            "player2_id": 2,
+                            "player1_score": 0.0
+                        },
+                        {
+                            "player1_id": 1,
+                            "player2_id": 8,
+                            "player1_score": 0.5
+                        },
+                        {
+                            "player1_id": 7,
+                            "player2_id": 4,
+                            "player1_score": 0.0
+                        },
+                        {
+                            "player1_id": 3,
+                            "player2_id": 6,
+                            "player1_score": 1.0
+                        }
+                    ],
+                    "name": "round 4",
+                    "start_datetime": "2022-02-14T11:32:53.716490",
+                    "end_datetime": "2022-02-14T11:32:56.329233",
+                    "position": 4
+                }
+            ],
+            "players": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        }
+    }
 }
