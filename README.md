@@ -7,7 +7,7 @@
 
 Lancer dans le terminal:
 
-***git clone https://github.com/gsysaath/scrapper_python.git chess_manager***
+***git clone https://github.com/gsysaath/python_chess_manager.git chess_manager***
 
 Rentrons dans le dossier tout juste cloné:
 
