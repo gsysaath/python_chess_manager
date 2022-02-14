@@ -1,3 +1,8 @@
+# Chess manager
+### Chess manager vous permet de gerer une liste de joureurs, de creer des joueurs et des tournois.
+### Il permet egalement de jouer les tournois avec le SYSTÈME SUISSE DES TOURNOIS
+
+
 # Installation du chess tournament manager
 ## Cloner le repo github en local
 
@@ -41,3 +46,7 @@ Activons le:
 - Pour windows:
 
     ***python main.py*** 
+    
+## Lancer un reporting flake8 pour le pep8
+
+   ***flake8 --format=html --htmldir=flake-report
